@@ -6,10 +6,17 @@ class Car:
     - Add a method named describe_car() that prints information about the car as "Year Make Model"
     """
 
+    def __init__(self, car_make, car_model, car_year):
+        self.make = car_make
+        self.model = car_model
+        self.year = car_year
+
     def describe_car(self):
-        print("")
+        print(f"{self.year} {self.make} {self.model}")
 
 
 # Task 2
 # Create an instance of the Car class with the following attributes and call describe_car method:
 # - Make: Toyota, Model: Corolla, Year: 2020
+mycar = Car("Toyota", "Corolla", 2020)
+mycar.describe_car()
